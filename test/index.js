@@ -5,8 +5,8 @@ var uuid = require('node-uuid');
 
 test('should provide a consistent UUID', function t(assert) {
     var value = uuid.v4();
-    var related = relatedUUID(value, 'ConstantKey');
-    assert.equal(isValidUUID(related), true);
-    assert.equal(related, relatedUUID(value, 'ConstantKey'));
+    var relatedValue = relatedUUID(value, 'ConstantKey');
+    assert.equal(isValidUUID(relatedValue), true);
+    assert.equal(relatedValue, relatedUUID(value, 'ConstantKey'));
     assert.end();
 });

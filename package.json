@@ -1,6 +1,6 @@
 {
   "name": "related-uuid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a consistent UUID based off another UUID and a key",
   "main": "index.js",
   "scripts": {
